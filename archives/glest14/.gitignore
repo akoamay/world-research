@@ -9,3 +9,4 @@ settings.gradle
 .project
 gradlew
 gradlew.bat
+.class
