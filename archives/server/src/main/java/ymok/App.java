@@ -6,9 +6,17 @@ public class App
 {
     public static void main( String[] args )
     {
-        new App();
+        new App(args[0]);
     }
-    public App(){
+    public App(String mode){
+        if ( mode.equals("s")){
+            Server server = new Server();
+            server.start();
+        }else if( mode.equals("c") ){
+            Client client = new Client();
+            client.start();
+            
+        }
     }
 
 }
